@@ -25,6 +25,14 @@ pipeline{
                 bat 'mvn --version'
             }
         }
+	    stage('Deploy')
+	    {
+		    steps{
+                bat 'mvn --version'
+            }
+	   }
+              
+		    
     }
 }
 
