@@ -7,14 +7,13 @@ pipeline{
                 git branch: 'master', url: 'https://github.com/akhadepramodini/Buzztalk_jenkins.git'
             }
         }
-	 stages
-	    {
+	
         stage('build') 
 		    {
             steps {
                 sh 'mvn --version'
             }
-        }
+        
         }
         stage('Test'){
             steps{
