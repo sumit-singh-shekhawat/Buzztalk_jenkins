@@ -11,7 +11,7 @@ pipeline{
         stage('build') 
 		    {
             steps {
-                bat 'mvn --version'
+                bat 'mvn compile'
             }
         
         }
@@ -22,13 +22,13 @@ pipeline{
         }
         stage('Package'){
             steps{
-                bat 'mvn --version'
+                bat 'mvn pacakge'
             }
         }
 	    stage('Deploy')
 	    {
 		    steps{
-                bat 'mvn --version'
+                bat 'mvn deploy'
             }
 	   }
               
